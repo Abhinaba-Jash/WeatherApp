@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature-Best Website to Check Current Weather</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <meta name="description" content="Nature is a very interactive and user-friendly website to check realtime weather of any location very accurately.">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img width="25px" src="assets/images/logo.png" alt="logo" />
+          <span style="font-weight: 700;" id="app-name">Nature</span>
+        </div>
+        <div class="navbar-toggle">
+          <img
+            id="toggle"
+            width="32px"
+            src="assets/images/hem-icon.svg"
+            alt="icon"
+          />
+        </div>
+        <div id="menu-overlay"></div>
+        <ul class="navbar-menu" id="menu">
+          <li>
+            <a href="#location-access-text" class="nav-link">Check Weather</a>
+          </li>
+          <li>
+            <a href="#hourly-forecast-heading" class="nav-link"
+              >Hourly Forecast</a
+            >
+          </li>
+          <li><a href="#alerts-heading" class="nav-link">Alerts</a></li>
+          <li><a href="#section4" class="nav-link">News</a></li>
+          <li><a href="#section5" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main">
+        <div id="section1" class="main-container">
+          <div class="location-access">
+            <span id="location-access-text"
+              >Give access to your current location</span
+            >
+            <button id="location-access-btn">Permit</button>
+          </div>
+
+          <div class="sun-container">
+            <div id="section1" class="section">
+              <span id="sunrise-moonrise">Sunrise</span>
+              <span id="sunrise-moonrise-time">00:00AM</span>
+            </div>
+            <div id="section2" class="section">
+              <img
+                id="line"
+                width="35px"
+                src="assets/images/Line.png"
+                alt="icon"
+              />
+              <img
+                id="circle"
+                width="35px"
+                src="assets/images/circle.png"
+                alt=""
+              />
+            </div>
+            <div id="section3" class="section">
+              <span id="sunset-moonset">Sunset</span>
+              <span id="sunset-moonset-time">00:00PM</span>
+            </div>
+          </div>
+
+          <div class="child-container">
+            <div class="weather-report">
+              <div class="search">
+                <input
+                  id="search-input"
+                  type="text"
+                  placeholder="Enter a place name here"
+                />
+                <img
+                  id="search-btn"
+                  width="25px"
+                  src="assets/images/search.png"
+                  alt="icon"
+                />
+              </div>
+              <span id="weather-place">Pluto</span>
+              <div class="temperature">
+                <img
+                  id="weather-icon"
+                  width="25px"
+                  src="assets/images/img1.png"
+                  alt="image"
+                />
+                <div class="feels-like">
+                  <h1 id="weather-temp">00° C</h1>
+                  <span id="weather-feels-like">Feels like 00° C</span>
+                </div>
+              </div>
+              <div class="weather-report-content">
+                <h3 id="weather-rain-chance">Chance of rain: 00%</h3>
+                <h3 id="weather-humidity">Humidity: 00</h3>
+                <h3 id="weather-description">Description: -----</h3>
+              </div>
+            </div>
+            <div class="another-report">
+              <div class="wind-report">
+                <h2>Wind Description</h2>
+                <h5 id="wind-direction">Direction: "-"</h5>
+                <div class="wind-report-content">
+                  <h4 id="wind-speed">Wind Speed: 00km/hr</h4>
+                  <h4 id="wind-pressure">Pressure: 0000.0mb</h4>
+                  <h4 id="wind-prescipitation">Precipitation: 00mm</h4>
+                  <h4 id="wind-heat-index">Heat Index: 00</h4>
+                </div>
+              </div>
+              <div class="air-report">
+                <h2>Air Quality Description</h2>
+                <div class="air-report-content">
+                  <h4 id="o2">O2 Index: 00</h4>
+                  <h4 id="co">CO Index: 0000.0</h4>
+                  <h4 id="o3">O3 Index: 00</h4>
+                  <h4 id="so2">SO2 Index: 00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="section2" class="secondary-container">
+          <h4 id="hourly-forecast-heading">Hourly Forecast</h4>
+          <div id="cards-container" class="cards-container">
+            <div class="card">
+              <h6 id="forecast-time">00:00PM</h6>
+              <img
+                id="forecast-icon"
+                width="25px"
+                src="assets/images/img1.png"
+                alt="image"
+              />
+              <h5 id="forecast-temp">Temp: 00° C</h5>
+              <h5 id="forecast-rain-chance">Rain: 00%</h5>
+            </div>
+          </div>
+          <template id="cards" class="cards">
+            <div id="forecast-card" class="card">
+              <h6 id="forecast-time">00:00PM</h6>
+              <img
+                id="forecast-icon"
+                width="25px"
+                src="assets/images/img1.png"
+                alt="image"
+              />
+              <h5 id="forecast-temp">Temp: 00° C</h5>
+              <h5 id="forecast-rain-chance">Rain: 60%</h5>
+            </div>
+          </template>
+          <div id="section3" class="alert-section">
+            <h4 id="alerts-heading">Alerts</h4>
+            <div id="alerts-container-main" class=".alerts-container-main">
+              <div class="alerts">
+                <div id="aleart-headline-btn" class="alerts-headline">
+                  <img
+                    width="25px"
+                    src="assets/images/alert-icon.svg"
+                    alt="image"
+                  />
+                  <span id="alert-headline">No alerts to show.</span>
+                </div>
+                <div id="alert-content-container" class="alerts-content">
+                  <h4 id="alert-severity"></h4>
+                  <h4 id="alert-areas"></h4>
+                  <h4 id="alert-description"></h4>
+                  <h4 id="alert-instruction"></h4>
+                </div>
+              </div>
+            </div>
+            <template class="alerts-container" id="alerts-container">
+              <div class="alerts">
+                <div id="aleart-headline-btn" class="alerts-headline">
+                  <img
+                    width="25px"
+                    src="assets/images/alert-icon.svg"
+                    alt="image"
+                  />
+                  <span id="alert-headline"></span>
+                </div>
+                <div id="alert-content-container" class="alerts-content">
+                  <h4 id="alert-severity"></h4>
+                  <h4 id="alert-areas"></h4>
+                  <h4 id="alert-description"></h4>
+                  <h4 id="alert-instruction"></h4>
+                </div>
+              </div>
+            </template>
+          </div>
+          <div id="section4" class="news-section">
+            <div class="news-heading-container">
+              <h4 id="news-heading">Current News</h4>
+              <button id="new-news">Tap for New News</button>
+            </div>
+            <div id="news-container-main" class="news-container-main">
+              <div class="news">
+                <div id="news-head-container" class="news-head-container">
+                  <div class="news-head">
+                    <img width="25px" src="assets/images/news.png" alt="icon" />
+                    <span id="news-headline"
+                      >No news to show (tap for new news)</span
+                    >
+                  </div>
+                  <span id="source"></span>
+                </div>
+                <div id="news-content-container" class="news-content-container">
+                  <img
+                    id="news-image"
+                    width="55px"
+                    src="assets/images/news.png"
+                    alt="image"
+                  />
+                  <span id="news-author"
+                    ></span
+                  >
+                  <span id="news-description"
+                    ></span
+                  >
+                  <span id="news-content"
+                    ></span
+                  >
+                  <div class="news-content-container-end">
+                    <span id="news-publish-at"
+                      ></span
+                    >
+                    <button id="news-know-more">Know More &gt;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <template id="news-container" class="news-container">
+              <div class="news">
+                <div id="news-head-container" class="news-head-container">
+                  <div class="news-head">
+                    <img width="25px" src="assets/images/news.png" alt="icon" />
+                    <span id="news-headline"
+                      ></span
+                    >
+                  </div>
+                  <span id="source"></span>
+                </div>
+                <div id="news-content-container" class="news-content-container">
+                  <img
+                    id="news-image"
+                    width="55px"
+                    src="assets/images/news.png"
+                    alt="image"
+                  />
+                  <span id="news-author"
+                    ></span
+                  >
+                  <span id="news-description"
+                    ></span
+                  >
+                  <span id="news-content"
+                    ></span
+                  >
+                  <div class="news-content-container-end">
+                    <span id="news-publish-at"
+                      ></span
+                    >
+                    <button id="news-know-more">Know More &gt;</button>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+          <div id="section5" class="faq-section">
+            <h3 id="faq-heading">Frequently Asked Questions</h3>
+            <div class="faq-box">
+              <div id="faq-question" class="question">
+                <span>What is Nature?</span>
+                <img
+                  id="faq-add-icon"
+                  src="assets/images/add-icon.svg"
+                  alt="add-icon"
+                />
+              </div>
+              <div id="faq-answer" class="answer">
+                Nature is a very basic and user-friendly website cum application
+                to get about realtime weather information of any place very
+                accurately.
+              </div>
+            </div>
+            <div class="faq-box">
+              <div class="question">
+                <span>Is it accurate?</span>
+                <img src="assets/images/add-icon.svg" alt="add-icon" />
+              </div>
+              <div class="answer">
+                It is pretty much accurate in forecasting and finding realtime
+                weather details.
+              </div>
+            </div>
+            <div class="faq-box">
+              <div class="question">
+                <span>How much fees required to access Nature?</span>
+                <img src="assets/images/add-icon.svg" alt="add-icon" />
+              </div>
+              <div class="answer">Nature is totally free to use.</div>
+            </div>
+            <div class="faq-box">
+              <div class="question">
+                <span>Is it secure to access?</span>
+                <img src="assets/images/add-icon.svg" alt="add-icon" />
+              </div>
+              <div class="answer">
+                Nature offers very secure connection with the server and never
+                access your location without your permission and no extra
+                unrequired is taken. So just chill, you're absolutely secure
+                with us.
+              </div>
+            </div>
+            <div class="faq-box">
+              <div class="question">
+                <span>Places can be accessed via Nature?</span>
+                <img src="assets/images/add-icon.svg" alt="add-icon" />
+              </div>
+              <div class="answer">
+                Any places on earth can be accessed via Nature. If anyone left,
+                then we offer realtime latitude, longitude access option which
+                provide accurate weather information about any place.
+              </div>
+            </div>
+            <div class="faq-box">
+              <div class="question">
+                <span>Why we need to take care of Nature?</span>
+                <img src="assets/images/add-icon.svg" alt="add-icon" />
+              </div>
+              <div class="answer">
+                Caring for nature is crucial as it provides essential resources,
+                maintains ecological balance, and ensures our long-term
+                survival.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>Abhinaba 2024 | &copy;All rights reserved.</span>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
